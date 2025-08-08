@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style> -->
+    <!-- //////////////////////////////////  ///////////////////////////////////// -->
+    <!-- <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style> -->
+    <!-- ////////////////////////////////// Android 12 ///////////////////////////////////// -->
+    <!-- <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+    <item name="android:windowSplashScreenBackground">@color/splash_background_color</item>
+    <item name="android:windowSplashScreenAnimatedIcon">@drawable/launch_background</item>
+    </style> -->
+
+    <!-- //// -->
+      <!-- Base application theme. -->
+      <style name="LaunchTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+      </style>
+
+      <!-- Splash Screen Theme (Pre-Android 12) -->
+      <!-- Inherit from Theme.SplashScreen OR Theme.SplashScreen.IconBackground -->
+      <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+          <!-- Define the background for older versions using a drawable -->
+          <item name="windowSplashScreenBackground">@color/splash_background_color</item>
+
+          <!-- Use your adaptive icon or carefully sized PNG -->
+          <!-- If using Adaptive Icon (ic_splash_logo.xml): -->
+          <item name="windowSplashScreenAnimatedIcon">@drawable/splash_launcher_background</item>
+          <!-- If using simple PNG (logo_for_splash.png): -->
+          <!-- <item name="windowSplashScreenAnimatedIcon">@drawable/launch_background_12</item> -->
+          <!-- Optional: Background behind the icon (visible if icon has transparency) -->
+          <!-- <item name="windowSplashScreenIconBackgroundColor">@color/splash_icon_background</item> -->
+          <!-- Theme to transition to after the splash screen -->
+          <item name="postSplashScreenTheme">@style/LaunchTheme</item>
+      </style>
+</resources>

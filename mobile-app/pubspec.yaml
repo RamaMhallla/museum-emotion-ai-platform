@@ -1,0 +1,50 @@
+name: emotion_detector_app
+description: A Flutter app to display images and simulate emotion detection.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  permission_handler: ^11.3.1
+  camera: ^0.11.0+1
+  image: ^4.1.7
+  tflite_flutter: ^0.11.0  
+  google_mlkit_face_detection: ^0.13.1
+  flutter_bloc: ^9.1.0
+  dio: ^5.8.0+1
+  dartz: ^0.10.1
+  flutter_easyloading: ^3.0.5
+  flutter_svg: ^2.1.0
+  shared_preferences: ^2.5.3  
+  easy_refresh: ^3.4.0
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/ml/
+    - assets/images/
+    - assets/
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato/Lato-Bold.ttf
+        - asset: assets/fonts/Lato/Lato-Light.ttf
+        - asset: assets/fonts/Lato/Lato-Regular.ttf
+    - family: Merriweather
+      fonts:
+        - asset: assets/fonts/Merriweather/Merriweather_24pt-Bold.ttf
+        - asset: assets/fonts/Merriweather/Merriweather_36pt-Bold.ttf
